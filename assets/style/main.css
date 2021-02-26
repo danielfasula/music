@@ -16,6 +16,10 @@ audio:hover {
   filter: drop-shadow(2px 2px 2px #68ffa7);
 }
 
+i:hover {
+  cursor: pointer;
+}
+
 body {
   font-family: 'roboto';
   background-color: rgb(3, 68, 3) !important;

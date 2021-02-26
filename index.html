@@ -69,35 +69,29 @@
         </div>
     </div>
 
-
     <main>
         <section class="row">
             <div class="offset-4 col-4 my-5">
                 <form onsubmit="app.songsController.search(event)">
-                    <input type="text" class="form-control" name="query" placeholder="Search For Music" />
-                    <button class="btn btn-success mt-1 form-control" type="submit">
-                        Search
-                    </button>
+                    <input type="text" class="form-control" name="query" placeholder="Search iTunes" />
+                    <button class="btn btn-success mt-1 form-control" type="submit">Search</button>
                 </form>
             </div>
         </section>
 
         <section class="row">
             <div class="col-6 search-results overflow-auto">
-                <h3 class="text-center">Search Results</h3>
-                <div id="songs" class="col-12 m-0">
-                    <!-- template to generate -->
+                <h3 class="text-center text-light">Search Results</h3>
+                <div id="songs" class="col-12">
                 </div>
             </div>
             <div class="col-6">
-                <h3 class="text-center">Playlist</h3>
-                <div class="col-12 m-0" id="playlist">
-                    <!-- template for playlist -->
+                <h3 class="text-center text-light">Playlist</h3>
+                <div id="playlist" class="col-12">
                 </div>
             </div>
         </section>
     </main>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"
         integrity="sha256-XmdRbTre/3RulhYk/cOBUMpYlaAp2Rpo/s556u0OIKk=" crossorigin="anonymous"></script>
@@ -207,5 +201,4 @@
         })();
     </script>
 </body>
-
 </html>
